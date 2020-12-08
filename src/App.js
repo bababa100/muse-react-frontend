@@ -1,4 +1,3 @@
-import logo from './logo.svg'
 import './App.css'
 import SongContainer from './SongContainer'
 function App() {
