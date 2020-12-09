@@ -35,7 +35,7 @@ class SongContainer extends Component {
       //The CreatedSongResponse variable will store the response from the Flask API
       const createdSongResponse = await axios({
         method: 'POST',
-        URL: process.env.REACT_APP_FLASK_API_URL + '/api/v1/songs',
+        url: process.env.REACT_APP_FLASK_API_URL + '/api/v1/songs',
         data: song,
         headers: {
           'Content-Type': 'application/json',

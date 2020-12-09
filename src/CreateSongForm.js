@@ -17,25 +17,25 @@ class CreateSongForm extends Component {
       <Segment>
         <h4>Create Song</h4>
         <Form onSubmit={(e) => this.props.addSong(e, this.state)}>
-          <Label>Title:</Label>
+          <Label>Song:</Label>
           <Form.Input
             type="text"
-            name="artist"
-            value={this.state.name}
+            name="title"
+            value={this.state.title}
             onChange={this.handleChange}
           />
           <Label>Artist:</Label>
           <Form.Input
             type="text"
-            name="album"
-            value={this.state.owner}
+            name="artist"
+            value={this.state.artist}
             onChange={this.handleChange}
           />
           <Label>Album:</Label>
           <Form.Input
             type="text"
-            name="title"
-            value={this.state.breed}
+            name="album"
+            value={this.state.album}
             onChange={this.handleChange}
           />
           <Button type="Submit">Create Song</Button>

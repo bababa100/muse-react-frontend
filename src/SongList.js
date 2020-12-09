@@ -7,8 +7,8 @@ function SongList(props) {
     return (
       <Card key={song.id}>
         <Card.Content>
-          <Card.Header>{song.name}</Card.Header>
-          <Card.Description>{song.breed}</Card.Description>
+          <Card.Header>{song.title}</Card.Header>
+          <Card.Description>{song.album}</Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Button onClick={() => props.deleteSong(song.id)}>DeleteSong</Button>
